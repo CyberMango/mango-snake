@@ -1,0 +1,12 @@
+save the free locations in a binary tree (avl or RB. probably RB due to many insertions and deletions)
+every turn add a free location and remove one.
+every turn search for the new head location in the free locations tree.
+for every new apple, choose a random free location. dont remove it from the tree.
+
+dont save a matrix with all the locations for an optimization of snake hit detection. you
+already have all the needed data stored efficiently. with said matrix, you will need to update it
+every turn, and store double the board data.
+
+locations nned to be saved as pairs of x,y and not as pointers because you dont actually have a board,
+you just have locations. no actual board is saved. its also easier for the ui to update the printed
+board by location and not by memory pointer.

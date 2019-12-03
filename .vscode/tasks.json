@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build snake debug version",
+            "type": "shell",
+            "command": "echo 1>to_del & mkdir debug 2>to_del & del to_del & g++",
+            "args": [
+                "-Werror",
+                "-Wall",
+                "-Wextra",
+                "-DDEBUG",
+                "-D_DEBUG",
+                "-g2",
+                "-O0",
+                "-o",
+                "debug\\snake.exe",
+                "main.cpp",
+                "business_logic\\snake_board.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "build snake release version",
+            "command": "echo 1>to_del & mkdir release 2>to_del & del to_del & g++",
+            "args": [
+                "${file}",
+                "-o",
+                "release\\snake.exe",
+                "-Wall",
+                "-Wextra",
+                "-Werror"
+            ],
+        }
+    ]
+}

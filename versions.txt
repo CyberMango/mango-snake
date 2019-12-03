@@ -1,0 +1,17 @@
+0.1:
+    ui:
+        start the game right off.
+        single difficulty.
+        no moving, no input.
+        stop at wall hit.
+        at the end, simply stop and wait for enter to exit.
+        save all board in a matrix and update it every turn.
+        re-print the board every step.
+    logic:
+        next location according to direction.
+        wall hit detection.
+        output updates object for the UI.
+    db:
+        nothing. no db. no reading from files.
+    
+0.2:
