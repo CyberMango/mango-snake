@@ -2,7 +2,7 @@
     ui:
         start the game right off.
         single difficulty.
-        no moving, no input.
+        no turning, no input.
         stop at wall hit.
         at the end, simply stop and wait for enter to exit.
         save all board in a matrix and update it every turn.
@@ -11,7 +11,18 @@
         next location according to direction.
         wall hit detection.
         output updates object for the UI.
+		free locations saved in a binary tree (not AVL yet).
     db:
         nothing. no db. no reading from files.
     
 0.2:
+	logic:
+		uses smart pointers.
+        check for memory leaks.
+		use move constructor.
+
+0.3:
+	logic:
+		the binary tree is an AVL tree.
+		the AVL tree is a generic template.
+        arrange the points not according to pair's defaul ordering.
