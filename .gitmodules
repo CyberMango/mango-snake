@@ -1,0 +1,3 @@
+[submodule "business_logic/AVL_tree"]
+	path = business_logic/AVL_tree
+	url = https://github.com/CyberMango/avl_tree_cpp.git
